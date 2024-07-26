@@ -9,6 +9,12 @@ body {
   align-items: center;
   box-shadow: 2px 3px #563b30;
 }
+.container.disable .editor-panel,
+.container.disable .controls .reset-filter,
+.container.disable .controls .save-img {
+  opacity: 0.5;
+  pointer-events: none;
+}
 
 h2 {
   color: #e6d9cf;
@@ -27,13 +33,24 @@ label {
 .preview-img {
   margin: 2px;
 }
-.wrapper {
+.container .wrapper {
   display: flex;
+  margin: 20px 0;
+  min-height: 335px;
 }
 .editor-panel {
   width: 250px;
   border: 1px#bf9a7a;
   padding: 3px;
+}
+.editor-panel .title {
+  display: block;
+  margin-bottom: 12px;
+}
+
+.editor-panel .options,
+.controls {
+  display: flex;
 }
 .options1 button {
   width: 110px;

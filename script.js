@@ -30,8 +30,8 @@ const loadImage = () => {
 
 // Manipulate the filter of the image
 const applyFilter = () => {
-  previewImg.computedStyleMap.transform = `rotate(${rotate}deg)scale(${flipHorizontal}, ${flipVertical})`;
-  previewImg.computedStyleMap.filter = `brightness(${brightnes}%) saturate(${saturation}%) invert(${inversion}%) grayscale(${grayscale}%)`;
+  previewImg.style.transform = `rotate(${rotate}deg)scale(${flipHorizontal}, ${flipVertical})`;
+  previewImg.style.filter = `brightness(${brightness}%) saturate(${saturation}%) invert(${inversion}%) grayscale(${grayscale}%)`;
 };
 
 filterOptions.forEach((option) => {
@@ -71,7 +71,7 @@ const updateFilter = () => {
   } else if (selectedFilter.id === "inversion") {
     inversion = filterSlider.value;
   } else {
-    grayscalen = filterSlider.value;
+    grayscale = filterSlider.value;
   }
   applyFilter();
 };
@@ -132,5 +132,5 @@ const saveImage = () => {
 filterSlider.addEventListener("input", updateFilter);
 resetFilterBtn.addEventListener("click", resetFilter);
 saveImgBtn.addEventListener("click", saveImage);
-fileInput.addEventListener("click", loadImage);
+fileInput.addEventListener("change", loadImage);
 chooseImgBtn.addEventListener("click", () => fileInput.click());
