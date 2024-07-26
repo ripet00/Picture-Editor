@@ -1,0 +1,92 @@
+body {
+  background-color: #f2e4d7;
+}
+.container {
+  max-width: 700px;
+  background-color: #7a5447;
+  padding: 20px;
+  border-radius: 16px;
+  align-items: center;
+  box-shadow: 2px 3px #563b30;
+}
+
+h2 {
+  color: #e6d9cf;
+}
+p {
+  color: #e6d9cf;
+}
+label {
+  color: #e6d9cf;
+}
+.editor-panel {
+  width: 300px;
+  border-color: #f7f161;
+  margin: 2px;
+}
+.preview-img {
+  margin: 2px;
+}
+.wrapper {
+  display: flex;
+}
+.editor-panel {
+  width: 250px;
+  border: 1px#bf9a7a;
+  padding: 3px;
+}
+.options1 button {
+  width: 110px;
+  height: 45px;
+  margin: 2px;
+  display: flexbox;
+  background-color: #a97a58;
+  color: #e6d9cf;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 1px 2px #563b30;
+}
+.options1 button:hover,
+.options2 button:hover {
+  background-color: #bf9a7a;
+}
+
+.value {
+  text-align: right;
+}
+input[type="range"] {
+  width: 100%;
+  background-color: #e6d9cf;
+}
+
+.options2 button {
+  width: 50px;
+  height: 40px;
+  margin: 2px;
+  background-color: #a97a58;
+  color: #e6d9cf;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 1px 2px #563b30;
+}
+
+.reset-filter {
+  text-align: left;
+}
+.row {
+  text-align: right;
+}
+
+.controls button {
+  padding: 10px 20px 10px 20px;
+  background-color: #e6d9cf;
+  color: #563b30;
+  border-radius: 8px;
+  border: none;
+
+  box-shadow: 1px 2px #563b30;
+  box-shadow: 1px 2px #563b30;
+}
+
+@media screen and(max-width: 390px) {
+}
