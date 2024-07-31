@@ -1,5 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   background-color: #f2e4d7;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  display: flex;
 }
 .container {
   max-width: 700px;
@@ -93,6 +102,11 @@ input[type="range"] {
 .row {
   text-align: right;
 }
+.preview-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
 
 .controls button {
   padding: 10px 20px 10px 20px;
@@ -100,10 +114,12 @@ input[type="range"] {
   color: #563b30;
   border-radius: 8px;
   border: none;
-
+  cursor: pointer;
   box-shadow: 1px 2px #563b30;
   box-shadow: 1px 2px #563b30;
 }
-
+.controls .choose-img {
+  border: 1px solid #e6d9cf;
+}
 @media screen and(max-width: 390px) {
 }
